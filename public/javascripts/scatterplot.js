@@ -38,14 +38,17 @@ document.addEventListener("gotData", function(){
     .data(dataset)
     .enter()
     .append("circle")
-    .attr('r', function(d){ return rScale(d[1]); })
     .attr('cx', w/2)
     .attr('cy', h/2)
+    .attr('r', 10)
+    .attr('fill', 'white')
+    .attr('stroke', 'rbg(245,245,245)')
     .transition()
     .delay(function(d, i){
       return i * 100;
     })
     .duration(3000)
+    .attr('r', function(d){ return rScale(d[1]); })
     .attr('cx', function(d){
       return xScale(d[0]);
     })
