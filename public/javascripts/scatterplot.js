@@ -42,7 +42,7 @@ document.addEventListener("gotData", function(){
     .attr('cy', h/2)
     .attr('r', 20)
     .attr('fill', 'white')
-    .attr('stroke', 'rbg(245,245,245)')
+    .attr('stroke', 'rgb(245,245,245)')
     .transition()
     .delay(function(d, i){
       return i * 100;
