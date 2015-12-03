@@ -32,7 +32,7 @@ document.addEventListener("gotData", function(){
 
   rScale = d3.scale.linear()
             .domain([0, d3.max(dataset, getYCoordiante)])
-            .range([2,5]);
+            .range([4,10]);
 
   circles
     .data(dataset)
@@ -40,7 +40,7 @@ document.addEventListener("gotData", function(){
     .append("circle")
     .attr('cx', w/2)
     .attr('cy', h/2)
-    .attr('r', 10)
+    .attr('r', 20)
     .attr('fill', 'white')
     .attr('stroke', 'rbg(245,245,245)')
     .transition()
